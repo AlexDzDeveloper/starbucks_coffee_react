@@ -1,3 +1,7 @@
+html {
+	background-color: #121517;
+}
+
 :root {
 	--textColor: #D9D9D9;
 	--leftPlaceGrad: linear-gradient(223deg, #237249 0%, #35c66b 100%);
