@@ -1,0 +1,74 @@
+@use './../../styles/variables' as *;
+@use './../../styles/mixins' as *;
+
+.promo {
+	margin-top: 80px;
+
+	&__block-top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 54px;
+	}
+
+	&__prev {
+		max-width: 574px;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+		gap: 54px;
+
+		.header span {
+			@include gradText;
+		}
+	}
+
+	&__btns {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+		gap: 17px;
+
+		.select {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 35px;
+			letter-spacing: -0.02em;
+			color: #fff;
+		}
+
+		.more {
+			position: relative;
+			border-radius: 83px;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 35px;
+			letter-spacing: -0.03em;
+			color: $textColor;
+		}
+
+		.more::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			padding: 1px; // товщина рамки
+			border-radius: inherit;
+			background: linear-gradient(to bottom right, $textColor, #121517);
+			-webkit-mask:
+				linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: xor;
+					mask-composite: exclude;
+			pointer-events: none;
+		}
+	}
+
+	&__img {
+		img {
+
+		}
+	}
+}
