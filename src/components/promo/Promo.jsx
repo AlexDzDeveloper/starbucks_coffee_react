@@ -19,15 +19,15 @@ function Promo() {
 						<div className="promo__indicators">
 							<div className="promo__indicators-block">
 								<p className="number">9k</p>
-								<span>Premium Users</span>
+								<span className='descr'>Premium Users</span>
 							</div>
 							<div className="promo__indicators-block">
 								<p className="number">2k</p>
-								<span>Happy Customer</span>
+								<span className='descr'>Happy Customer</span>
 							</div>
 							<div className="promo__indicators-block">
 								<p className="number">28</p>
-								<span>Awards Winning</span>
+								<span className='descr'>Awards Winning</span>
 							</div>
 						</div>
 					</div>
@@ -38,24 +38,24 @@ function Promo() {
 				<div className="promo__block-bottom">
 					<div className="promo__proffer">
 						<div className="promo__proffer-img">
-							<img src={heart} alt="heart" />
+							<img src={heart} alt="heart" id='heard'/>
 						</div>
-						<h3 className="promo__proofer-header">Tasty</h3>
-						<p className="promo__proofer-text">We have the m ost delicious coffee</p>
+						<h3 className="promo__proffer-header subheader">Tasty</h3>
+						<p className="promo__proffer-text">We have the most delicious coffee</p>
 					</div>
 					<div className="promo__proffer">
 						<div className="promo__proffer-img">
-							<img src={rocket} alt="rocket" />
+							<img src={rocket} alt="rocket" id='rocket'/>
 						</div>
-						<h3 className="promo__proofer-header">Fast</h3>
-						<p className="promo__proofer-text">Our cafe will serve you quickly</p>
+						<h3 className="promo__proffer-header subheader">Fast</h3>
+						<p className="promo__proffer-text">Our cafe will serve you quickly</p>
 					</div>
 					<div className="promo__proffer">
 						<div className="promo__proffer-img">
-							<img src={money} alt="money" />
+							<img src={money} alt="money" id='money'/>
 						</div>
-						<h3 className="promo__proofer-header">Available</h3>
-						<p className="promo__proofer-text">Cafe will serveat the most pleasant prices</p>
+						<h3 className="promo__proffer-header subheader">Available</h3>
+						<p className="promo__proffer-text">Cafe will serveat the most pleasant prices</p>
 					</div>
 				</div>
 			</div>
